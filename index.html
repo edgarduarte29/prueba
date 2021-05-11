@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravedad</title>
+</head>
+<body>
+    <h1>Gravedad en otros Planetas</h1>
+
+    <p>
+        <script type="text/javascript" id="texto">
+
+            var usuario = prompt("¿Cúal es tu peso?");
+            var planeta = parseInt(prompt("¿Qué Planeta eliges? 1.Marte 2.Jupiter "));    
+            var peso = parseInt(usuario);
+            var g_tierra = 9.8;  
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            
+    
+            if (planeta == 1)
+            {
+                 peso_final = peso * g_marte / g_tierra; 
+                 document.write("Tu peso en Marte es " + parseInt(peso_final));
+        
+            }
+
+            else if (planeta == 2)
+            {
+                peso_final = peso * g_jupiter / g_tierra;
+                document.write("Tu Peso en Júpiter es " + parseInt(peso_final));
+            }
+            
+        </script>
+    </p>
+</body>
+</html>
